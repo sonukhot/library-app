@@ -1,0 +1,10 @@
+doctype html
+html
+include ../partials/header
+
+    body
+        div(class='content')
+            each item in items
+                item(class='item')
+                    h3= item.item
+                    p= item.category

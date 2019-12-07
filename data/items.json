@@ -1,0 +1,78 @@
+[{
+        "id": 1,
+        "item": "Microscope",
+        "category": "fun",
+        "checkStatus": "In",
+        "memberId": ""
+    },
+    {
+        "id": 2,
+        "item": "Xbox",
+        "category": "fun",
+        "checkStatus": "In",
+        "memberId": ""
+    },
+    {
+        "id": 3,
+        "item": "Telescope",
+        "category": "fun",
+        "checkStatus": "In",
+        "memberId": ""
+    },
+    {
+        "id": 4,
+        "item": "Puzzles",
+        "category": "fun",
+        "checkStatus": "In",
+        "memberId": ""
+    },
+    {
+        "id": 5,
+        "item": "Lego",
+        "category": "fun",
+        "checkStatus": "In",
+        "memberId": ""
+    },
+    {
+        "id": 6,
+        "item": "Playstation",
+        "category": "fun",
+        "checkStatus": "In",
+        "memberId": ""
+    },
+    {
+        "id": 7,
+        "item": "ipad",
+        "category": "Tech",
+        "checkStatus": "In",
+        "memberId": ""
+    },
+    {
+        "id": 8,
+        "item": "Amazon Echo",
+        "category": "Tech",
+        "checkStatus": "In",
+        "memberId": ""
+    },
+    {
+        "id": 9,
+        "item": "Raspberry Pi",
+        "category": "Tech",
+        "checkStatus": "In",
+        "memberId": ""
+    },
+    {
+        "id": 10,
+        "item": "Roku",
+        "category": "Tech",
+        "checkStatus": "In",
+        "memberId": ""
+    },
+    {
+        "id": 11,
+        "item": "Google Home",
+        "category": "Tech",
+        "checkStatus": "In",
+        "memberId": ""
+    }
+]
