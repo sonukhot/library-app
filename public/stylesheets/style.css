@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: darkgrey;
+    padding: 1%;
+    font-family: courier;
+}
+
+h1 {
+    text-align: center;
+}
+
+.content {
+    display: inline-block;
+    margin: auto;
+}
+
+
+.item {
+    display: inline-block;
+    border: solid lightslategrey 3px;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+.item ul {
+    display: inline;
+}
+
+.item ul li {
+    display: block;
+    list-style-type: none;
+}
