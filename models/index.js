@@ -18,10 +18,7 @@ const connection = new Sequelize(database, username, password, {
 })
 
 const items = itemsModel(connection, Sequelize)
-//const users = usersModel(connection, Sequelize)
-
 
 module.exports = {
     items,
-    //users
 }

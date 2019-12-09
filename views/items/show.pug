@@ -4,7 +4,15 @@ include ../partials/header
 
     body
         div(class='content')
-            each item in items
-                item(class='item')
-                    h3= item.item
-                    p= item.category
+            div(class='flex-wrapper')
+                each item in items
+                    item(class='item')
+                        h3= item.item
+                        p= item.category
+                        img( src="/images/" + item.item + ".jpg", height='128', width='318')
+                        button-wrapper(class='button-wrapper')
+                            button(class='button-add')
+                                p= 'Check Out'
+                            button(class='button-remove')
+                                p= 'Return'
+include ../partials/footer

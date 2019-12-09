@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
+    font-family: courier;
 }
 
 body {
-    background-color: lightgray;
+    background-color: black;
     margin: 0px;
     padding: 0px;
 }
@@ -11,33 +12,106 @@ body {
 header {
     background-color: darkgrey;
     padding: 1%;
-    font-family: courier;
+    font-family: papyrus;
 }
 
 h1 {
     text-align: center;
 }
 
-.content {
-    display: inline-block;
-    margin: auto;
-}
+/*.container {
+    width: 90%;
+    margin: 0 auto;
+}*/
 
+.flex-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 .item {
-    display: inline-block;
+    /*flex-basis: 25%;*/
     border: solid lightslategrey 3px;
-    background-color: lightskyblue;
+    background-color: white;
     border-radius: 5px;
     text-align: center;
-    width: calc(100% / 3);
+    margin: 20px;
 }
 
-.item ul {
-    display: inline;
+img {
+    width: auto;
+    max-height: 128;
 }
 
-.item ul li {
-    display: block;
-    list-style-type: none;
+.item:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+    border: solid purple 3px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+
+button {
+    color: grey;
+    width: 35%;
+    border-radius: 5px;
+    background-color: white;
+    border: solid grey 3px;
+}
+
+button:active {
+    background-color: gold;
+}
+
+button:hover {
+    color: black;
+    background-color: lightgreen;
+    border: solid green 3px;
+    transition: all 0.3s;
+}
+
+.footer p {
+    background-color: grey;
+    margin: 0px;
+    padding: 1%;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+
+    .item {
+        flex-basis: 80%;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 850px) {
+    .item {
+        flex-basis: 45%;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 851px) {
+    .item {
+        flex-basis: 25%;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
