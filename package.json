@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
+    "migrate:dev": "./node_modules/.bin/sequelize db:migrate --env development --config ./config/sequelize.js",
+    "migrate:dev:down": "./node_modules/.bin/sequelize db:migrate:undo --env development --config ./config/sequelize.js",
     "server:dev": "./node_modules/.bin/nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
