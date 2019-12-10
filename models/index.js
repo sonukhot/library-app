@@ -11,11 +11,13 @@ const {
     dialect
 } = allConfigs[environment]
 
+const connection = new Sequelize(database, username, password, {
+    host,
+    dialect
+})
+
 const items = itemsModel(connection, Sequelize)
-
-
 
 module.exports = {
     items,
-    
 }
