@@ -1,6 +1,5 @@
 const Sequelize = require('sequelize')
 const itemsModel = require('./items')
-//const usersModel = require('./users')
 const allConfigs = require('../config/sequelize')
 
 const environment = process.env.NODE_ENV ? process.env.NODE_ENV : 'development'

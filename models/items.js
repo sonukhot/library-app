@@ -5,12 +5,15 @@ const Items = (connection, Sequelize) => {
             autoIncrement: true,
             primaryKey: true
         },
-        title: {
+        item: {
             type: Sequelize.STRING,
         },
         category: {
-            type: Sequelize.STRING,
+            type: Sequelize.ENUM,
         },
+        availability: {
+            type: Sequelize.ENUM,
+        }
     }, {
         paranoid: true
     })
