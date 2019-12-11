@@ -9,7 +9,7 @@ module.exports = {
       Example:
       return queryInterface.createTable('users', { id: Sequelize.INTEGER });
     */
-    return queryInterface.bulkInsert('items', [
+    queryInterface.bulkInsert('items', [
       {
         item: 'Xbox', category: 'fun', availability: 'Out'
       },
@@ -84,16 +84,25 @@ module.exports = {
       }
     ]
     )
+
+    return queryInterface.bulkInsert('users', [
+      { username: "Upasana", password: "Tanvir" },
+      { username: "Tatiana", password: "Ortiz" },
+      { username: "PatrickM", password: "Muwanguzi" },
+      { username: "PatrickO", password: "OConnor" },
+      { username: "Caleb", password: "French" },
+      { username: "Ujwala", password: "Pawnarkar" },
+      { username: "Mike", password: "Guillemette" },
+      { username: "John", password: "Carmicheal" },
+      { username: "David", password: "Yourgrau" },
+      { username: "Erik", password: "Fogg" },
+      { username: "Alex", password: "Johnson" }
+    ])
   },
 
   down: (queryInterface, Sequelize) => {
-    /*
-      Add reverting commands here.
-      Return a promise to correctly handle asynchronicity.
 
-      Example:
-      return queryInterface.dropTable('users');
-    */
-    return queryInterface.bulkDelete('items')
+    queryInterface.bulkDelete('items')
+    return queryInterface.bulkDelete('users')
   }
 };
