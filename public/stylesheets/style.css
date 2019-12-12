@@ -57,15 +57,25 @@ img {
 }
 
 button {
-    color: grey;
     width: 35%;
     border-radius: 5px;
     background-color: white;
     border: solid grey 3px;
 }
 
+button a {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    color: grey;
+}
+
 button:active {
     background-color: gold;
+}
+
+button a:hover {
+    color: black;
 }
 
 button:hover {
@@ -80,6 +90,21 @@ button:hover {
     margin: 0px;
     padding: 1%;
     text-align: center;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    padding: 2rem;
+}
+
+.nav li a {
+    display: block;
 }
 
 @media (max-width: 480px) {

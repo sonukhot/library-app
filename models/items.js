@@ -9,10 +9,10 @@ const Items = (connection, Sequelize) => {
             type: Sequelize.STRING,
         },
         category: {
-            type: Sequelize.ENUM,
+            type: Sequelize.ENUM('fun', 'Tech', 'Tools', 'Home'),
         },
         availability: {
-            type: Sequelize.ENUM,
+            type: Sequelize.ENUM('in', 'out'),
         }
     }, {
         paranoid: true
