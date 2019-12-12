@@ -6,5 +6,8 @@ html
     body
         header
             h1= "Library Application"
+            ul(class='nav')
+                each val in ['Home', 'About', 'Items', 'Contact', 'FAQ']
+                    li= val
         div.container
             block content

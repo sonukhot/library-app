@@ -12,7 +12,7 @@ include ../partials/header
                         img( src="/images/" + item.item + ".jpg", height='128', width='318')
                         button-wrapper(class='button-wrapper')
                             button(class='button-add')
-                                p= 'Check Out'
+                                a(href="/items/" + item.id + "/checkOut") Check Out
                             button(class='button-remove')
-                                p= 'Return'
+                                a(href="/items/" + item.id + "/return") Return
 include ../partials/footer
